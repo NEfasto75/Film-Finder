@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="List of movies" />
+    <meta name="keywords" content="films" />
+    <meta name="author" content="Luca Frattari" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Film Finder</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <script defer src="movie_database_example.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">My Movies</h1>
+    </header>
+    <nav class="navigationBar">
+      <input
+        type="radio"
+        id="filter-latest"
+        class="filmFilter"
+        name="active-filter"
+        value="latest"
+      />
+      <label for="filter-latest">Latest movies</label>
+      <input
+        type="radio"
+        id="filter-avengers"
+        class="filmFilter"
+        name="active-filter"
+        value="avengers"
+      />
+      <label for="filter-avengers">Avengers movies</label>
+      <input
+        type="radio"
+        id="filter-x-men"
+        class="filmFilter"
+        name="active-filter"
+        value="x-men"
+      />
+      <label for="filter-x-men">X-Men movies</label>
+      <input
+        type="radio"
+        id="filter-princess"
+        class="filmFilter"
+        name="active-filter"
+        value="princess"
+      />
+      <label for="filter-princess">Princess movies</label>
+      <input
+        type="radio"
+        id="filter-batman"
+        class="filmFilter"
+        name="active-filter"
+        value="batman"
+      />
+      <label for="filter-batman">Batman movies</label>
+    </nav>
+    <main class="movieList">
+      <ul id="mainMoviesList"></ul>
+    </main>
+    <footer class="mySelf">©2022 Luca Frattari all right reserved</footer>
+  </body>
+</html>
